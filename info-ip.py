@@ -101,7 +101,7 @@ def ipss():
  if s =='3':
   print('\n\033[32;1mObrigado por ultilizar os serviços do scorpion king\n')
   exit()
- if s != '1' and '2' and '3' and '':
+ if s != 1 and 2 and 3 and '':
   print('\033[33;1mSeleção invalida\033[0;0m')
   time.sleep(3)
   ipss()
