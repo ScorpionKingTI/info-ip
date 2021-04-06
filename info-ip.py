@@ -39,7 +39,7 @@ def ipss():
  print('\033[32;1m             ╚═╝╚═╝')
  time.sleep(0.1)      
  print('')
- print('''
+ print('''\033[34;1m
  ____________________________________________
  |
  |---------- 1. consultar um ip
@@ -49,7 +49,7 @@ def ipss():
  ''')
  s=input('\nDigite a opção que deseja\n>')
  if s == '1':
-  print("\033[34;1mDigite o endereço ip, ex :170.245.225.107...se caso o campo da digitação estiver vazio e for dado enter você verá informação sobre seu ip atual: \033[0;0m\n")
+  print("\n\033[34;1mDigite o endereço ip, ex :170.245.225.107...se caso o campo da digitação estiver vazio e for dado enter você verá informação sobre seu ip atual: \033[0;0m\n")
   ipg=input('>')
   api = requests.get("https://ipapi.co/{}/json".format(ipg))
   resultado = api.json()
@@ -96,9 +96,26 @@ def ipss():
    print('\n\033[33;1mIP não existe\033[0;0m\n')
    gt()
  if s =='2':
-  print('\033[32;1mEssa script retorna informação a partir de um determinado ip...caso queira ver status de seu proprio ip basta dar enter sem digitar nada\n')
+  print('\n\033[32;1mEssa script retorna informação a partir de um determinado ip...caso queira ver status de seu proprio ip basta dar enter sem digitar nada\n')
   gt()
  if s =='3':
   print('\n\033[32;1mObrigado por ultilizar os serviços do scorpion king\n')
   exit()
+os.system('clear')
+print("\033[34;1m                    coded by:")
+time.sleep(0.1)      
+print("")
+time.sleep(0.1)      
+print("       ⟡ ━━━━━━━━ ⟡ ━━━━━━━━ ⟡ ━━━━━━━━ ⟡ ")
+time.sleep(0.1)      
+print("       ┃                                ┃")
+time.sleep(0.1)       
+print("       ┃      ✪   SCORPION KING   ✪    ┃")
+time.sleep(0.1)      
+print("       ┃                                ┃")
+time.sleep(0.1)      
+print("       ⟡ ━━━━━━━━ ⟡ ━━━━━━━━ ⟡ ━━━━━━━━ ⟡")  
+print('')
+time.sleep(5) 
+os.system('clear')
 ipss()
