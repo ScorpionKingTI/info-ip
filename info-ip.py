@@ -47,7 +47,7 @@ def ipss():
  |---------- 3. sair 
  |___________________________________________
  ''')
- s=input('\nDigite a opção que deseja\n             >')
+ s=input('\nDigite a opção que deseja\n          >')
  if s == '1':
   print("\n\033[34;1mDigite o endereço ip, ex :170.245.225.107...se caso o campo da digitação estiver vazio e for dado enter você verá informação sobre seu ip atual: \033[0;0m\n")
   ipg=input('>')
